@@ -1,4 +1,4 @@
-RewriteEngine on
+RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www. [NC]
-RewriteRule (.*) https://test.enzo-fazzi.ch/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www. [NC]
+RewriteRule (.*) https://www.domaine.com/$1 [R=301,L]
